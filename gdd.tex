@@ -1,0 +1,81 @@
+\documentclass[pdftex,12pt,a4paper,ngerman,dvipsnames]{scrreport}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[pdfusetitle]{hyperref}
+
+\newcommand \worktitle{Estrokitty}
+\newcommand \authors{Glitch(she/her)\footnote{\url{https://github.com/glitchedVixen}}
+  % \and Test
+  %% Add yourself here, if you edit the document
+}
+
+\hypersetup
+{
+    pdfsubject = {Game Design Document},
+    pdfview = FitV,
+    pdfstartview = FitV,
+    pdfhighlight = /I,
+    pdfborder = 0 0 0,
+    colorlinks = false,
+    bookmarksopen,
+    bookmarksopenlevel = 1,
+    bookmarksnumbered = false,
+    plainpages = false
+}
+
+% -------------------------------------------------------------------
+\usepackage{fancyhdr}
+\usepackage{extramarks}
+
+\pagestyle{fancy}
+
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[RE]{\textit{\nouppercase{\leftmark}}}
+\fancyhead[LO]{\textit{\nouppercase{\rightmark}}}
+
+\fancypagestyle{plain}{ %
+\fancyhf{} % remove everything
+\renewcommand{\headrulewidth}{0pt} % remove lines as well
+\renewcommand{\footrulewidth}{0pt}} \pagestyle{headings}
+% -------------------------------------------------------------------
+
+\title{\worktitle}
+\subtitle{An Estrocats\footnote{\url{http://estrocats.de}} game}
+\author{\authors}
+
+
+\begin{document}
+\pagestyle{empty}
+\maketitle
+\pagestyle{empty} \cleardoublepage
+\tableofcontents
+\cleardoublepage 
+\pagenumbering{arabic}
+\pagestyle{fancy}
+\chapter{Overview}
+\section{Concept}
+\section{Genre}
+\section{Target Audience}
+\section{Platform}
+\chapter{Story}
+\section{Outline}
+\section{Characters}
+\section{Setting}
+\chapter{Gameplay}
+\section{Gameplay Loop}
+\section{Mechanics}
+\section{Controls}
+\section{Objectives}
+\section{Progression}
+\chapter{Art and Sound}
+\section{Art Style}
+\section{Sound}
+\chapter{Level Design}
+\chapter{UI}
+\section{Menus}
+\section{HUD}
+\chapter{Technical Requirements}
+\section{Game Engine}
+\section{Hardware Requirements}
+\end{document}
